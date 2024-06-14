@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="icon" type="imagem/png" href="assets/favIcon.png">
+    <title>AirCules</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="./assets/logo.png" alt=""></a>
+        </div>
+        <div>
+            <a href="./cadastro.html"><b>CADASTRAR</b></a>
+        </div>
+        <div>
+            <a href="./agenda.html"><b>AGENDA</b></a>
+        </div>
+    </header>
+
+
+    <main>
+        <form action="" onsubmit="enviar()">
+            <h1><b>CADASTRO</b></h1>
+            <div class="text">
+                <p><b>Selecione o modelo de sua aeronave:</b></p>
+            </div>
+            <input type="text" id="modelo" class="informacoes" required>
+
+            </select>
+            <div class="text">
+                <p><b>Insira as horas de vida util de cada parte do avião abaixo:</b></p>
+            </div>
+            <input type="number" class="informacoes" id="fuselagem" placeholder="Fuselagem do avião" required>
+            <input type="number" class="informacoes" id="empenagem" placeholder="Empenagem" required>
+            <input type="number" class="informacoes" id="grupoMotor" placeholder="Grupo moto-propulsor" required>
+            <input type="number" class="informacoes" id="tremDePouso" placeholder="Trem de pouso" required>
+            <input type="number" class="informacoes" id="asas" placeholder="Asas" required>
+            <input type="number" name="" id="horasTotais" class="informacoes" placeholder="Horas Totais" required>
+            <input type="number" name="" id="ciclosTotais" class="informacoes" placeholder="Ciclos totais realizados"
+                required>
+            <button type="submit" class="botao">Cadastrar</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <div>
+            <p><b>&copy; AirCules - 2022</b></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
